@@ -22,6 +22,15 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .header::after {
+            content: '\2728';
+            font-size: 40px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
         }
         .section {
             height: 100vh;
@@ -38,8 +47,6 @@
         .image-section {
             background-size: cover;
             background-position: center;
-            color: white;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
         }
         .section:nth-child(odd) {
             background-color: white;
@@ -76,12 +83,27 @@
             margin: 20px auto;
             border-radius: 3px;
         }
+        .shape {
+            width: 80px;
+            height: 80px;
+            background-color: #ffcc00;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+        .section.image-section p {
+            text-shadow: none;
+            color: black;
+        }
     </style>
 </head>
 <body>
     <div class="header">Gry komputerowe vs Książki</div>
     
     <div class="section image-section" style="background-image: url('https://source.unsplash.com/800x600/?gaming');">
+        <div class="shape"></div>
         <h1>Wprowadzenie</h1>
         <div class="decorative-line"></div>
         <p>Czy gry komputerowe są lepsze niż książki? To pytanie od dawna budzi wiele emocji. W tej prezentacji przedstawimy kilka argumentów na korzyść gier.</p>
