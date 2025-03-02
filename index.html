@@ -20,23 +20,25 @@
             font-size: 24px;
             font-weight: bold;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
         .section {
-            margin-bottom: 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
         }
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
+        .image-section {
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .section:nth-child(odd) {
+            background-color: white;
+        }
+        .section:nth-child(even) {
+            background-color: #e0e0e0;
         }
         .button {
             display: inline-block;
@@ -56,25 +58,31 @@
 </head>
 <body>
     <div class="header">Gry komputerowe vs Książki</div>
-    <div class="container">
-        <div class="section">
-            <h1>Wprowadzenie</h1>
-            <p>Czy gry komputerowe są lepsze niż książki? To pytanie od dawna budzi wiele emocji. W tej prezentacji przedstawimy kilka argumentów na korzyść gier.</p>
-        </div>
-        <div class="section">
-            <h2>Dlaczego gry komputerowe są lepsze?</h2>
-            <ul>
-                <li><strong>Interaktywność</strong> - Możesz wpływać na świat gry, zamiast tylko go obserwować.</li>
-                <li><strong>Grafika i dźwięk</strong> - Gry oferują wizualne i dźwiękowe doświadczenia, które książki nie mogą zapewnić.</li>
-                <li><strong>Współpraca i rywalizacja</strong> - Możesz grać z innymi ludźmi i rywalizować lub współpracować.</li>
-                <li><strong>Imersja</strong> - Możesz poczuć się częścią świata gry, eksplorować go i podejmować decyzje.</li>
-                <li><strong>Rozwój umiejętności</strong> - Gry rozwijają refleks, myślenie strategiczne i zdolności logiczne.</li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Podsumowanie</h2>
-            <p>Oczywiście książki mają swoje zalety, jednak gry komputerowe oferują więcej możliwości interakcji, emocji i nauki poprzez zabawę.</p>
-        </div>
+    
+    <div class="section image-section" style="background-image: url('https://source.unsplash.com/800x600/?gaming');">
+        <h1>Wprowadzenie</h1>
+        <p>Czy gry komputerowe są lepsze niż książki? To pytanie od dawna budzi wiele emocji. W tej prezentacji przedstawimy kilka argumentów na korzyść gier.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Dlaczego gry komputerowe są lepsze?</h2>
+        <ul style="text-align: left; max-width: 600px;">
+            <li><strong>Interaktywność</strong> - Możesz wpływać na świat gry, zamiast tylko go obserwować.</li>
+            <li><strong>Grafika i dźwięk</strong> - Gry oferują wizualne i dźwiękowe doświadczenia, które książki nie mogą zapewnić.</li>
+            <li><strong>Współpraca i rywalizacja</strong> - Możesz grać z innymi ludźmi i rywalizować lub współpracować.</li>
+            <li><strong>Imersja</strong> - Możesz poczuć się częścią świata gry, eksplorować go i podejmować decyzje.</li>
+            <li><strong>Rozwój umiejętności</strong> - Gry rozwijają refleks, myślenie strategiczne i zdolności logiczne.</li>
+        </ul>
+    </div>
+    
+    <div class="section image-section" style="background-image: url('https://source.unsplash.com/800x600/?books');">
+        <h2>Podsumowanie</h2>
+        <p>Oczywiście książki mają swoje zalety, jednak gry komputerowe oferują więcej możliwości interakcji, emocji i nauki poprzez zabawę.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Kontakt</h2>
+        <p>Chcesz się podzielić swoją opinią?</p>
         <a href="https://docs.google.com/forms/d/1kh43p-UwWmAmzgxVVvQyeZQXGBOshLdkyt3SL0mU1Ho/edit" class="button" target="_blank">Kontakt</a>
     </div>
 </body>
